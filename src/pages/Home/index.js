@@ -13,13 +13,15 @@ const Home = () => {
     const [email, setEmail] = useState(null)
     useEffect(() => {decodeAccess()}, [])
     
+    function titleCase(string){
+        return string[0].toUpperCase() + string.slice(1).toLowerCase();
+    }
 
     const decodeAccess = () => {
         const params = new URLSearchParams(location.hash);
-        if ([...params.entries()].length == 5) setEmail(jwt([...params.entries()][0][1]).email)
+        if ([...params.entries()].length == 5) setEmail(titleCase(jwt([...params.entries()][0][1]).email))
     }
-    const params = new URLSearchParams(location.hash);
-
+    
     
     return (
         <>
@@ -38,7 +40,7 @@ const Home = () => {
             <br/>
             <EmojiProvider data={emojiData}> <div className='flex flex-row justify-center mx-auto'> <Emoji name="party-popper" className="" width={90} /> <Emoji name="party-popper" className="" width={90} /><Emoji name="party-popper" className="" width={90} /></div> </EmojiProvider>
             <br/>
-            <p className="lead text-white mt-3 mb-8 w-60 mx-auto text-5xl"> <span className='font-bold'>{email} </span> <br/> has been authenticated! <br/> <br/> Woop Woop, Glad to have you on board! Make your way back to the app to finish setting up your profile.</p>
+            <p className="lead text-white mt-3 mb-8 w-60 mx-auto text-5xl"> <span className='font-bold text-6xl'>{email} </span> <br/> has been authenticated! <br/> <br/> Woop Woop, Glad to have you on board! Make your way back to the app to finish setting up your profile.</p>
             </>
             : 
             <>
