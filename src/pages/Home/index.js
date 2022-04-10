@@ -42,8 +42,8 @@ const Home = () => {
             </>
             : 
             <>
-            <h1 className="text-white pt-3 ">Welcome to Mappin!</h1>
-            <p className="lead text-white mt-3 mb-8"> Welcome to the first at-hand social platform to jot down, <br/> organise & share places you want to visit with friends.</p>
+            <h1 className="text-white pt-3 text-9xl">Welcome to Mappin!</h1>
+            <p className="lead text-white mt-3 mb-8 w-60 mx-auto text-5xl"> Welcome to the first at-hand social platform to jot down, organise & share places you want to visit with friends.</p>
             </>
             }
             
