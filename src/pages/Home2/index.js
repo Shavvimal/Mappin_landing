@@ -212,18 +212,7 @@ const Home2 = () => {
                   </div>
 {/*  */}
 
-            <ul class="circles">
-                    <li className=" lg:visible"></li>
-                    <li className=" lg:visible"></li>
-                    <li className="invisible lg:visible"></li>
-                    <li className=" lg:visible"></li>
-                    <li className=" lg:visible"></li>
-                    <li className="invisible lg:visible"></li>
-                    <li className="invisible lg:visible"></li>
-                    <li className="lg:visible"></li>
-                    <li className="invisible lg:visible"></li>
-                    <li className=" lg:visible"></li>
-            </ul>
+
 
     {/*  */}
 
@@ -234,6 +223,21 @@ const Home2 = () => {
 
         </div>
       </section>
+
+      <div >
+            <ul class="circles  lg:absolute">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
     </>
   );
 };
