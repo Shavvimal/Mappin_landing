@@ -82,7 +82,7 @@ const Home = () => {
                   </>
                 )}
               </div>
-              {email ? ( <></> ) : (
+            
               <div class="container mx-auto mb-12">
                 <div class="flex justify-center">
 
@@ -211,7 +211,7 @@ const Home = () => {
 
 
                 </div>
-              </div> )}
+              </div>
             </div>
           </div>
 
