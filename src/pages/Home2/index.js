@@ -8,7 +8,9 @@ import emojiData from "react-apple-emojis/lib/data.json";
 import "./assets/css/home.css";
 import jwt from "jwt-decode";
 
-const Home = () => {
+import "./assets/css/home.css"
+
+const Home2 = () => {
   const location = useLocation();
   const [email, setEmail] = useState(null);
   useEffect(() => {
@@ -208,7 +210,22 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
+{/*  */}
 
+            <ul class="circles">
+                    <li className=" lg:visible"></li>
+                    <li className=" lg:visible"></li>
+                    <li className="invisible lg:visible"></li>
+                    <li className=" lg:visible"></li>
+                    <li className=" lg:visible"></li>
+                    <li className="invisible lg:visible"></li>
+                    <li className="invisible lg:visible"></li>
+                    <li className="lg:visible"></li>
+                    <li className="invisible lg:visible"></li>
+                    <li className=" lg:visible"></li>
+            </ul>
+
+    {/*  */}
 
                 </div>
               </div>
@@ -221,4 +238,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;

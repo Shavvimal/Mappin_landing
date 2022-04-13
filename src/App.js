@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Home} from './pages';
+import {Home, Home2} from './pages';
 import { Header, Modal} from './layout';
 import './styles/app.css';
 
@@ -16,7 +16,7 @@ function App(){
         <>
 
 
-            <Home />
+            <Home2 />
 
 
 
