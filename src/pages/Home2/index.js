@@ -30,12 +30,12 @@ const Home2 = () => {
   return (
     <>
       <section
-        class=" bg-center bg-cover h-full overflow-scroll "
+        class=" bg-center bg-cover h-full overflow-scroll relative area"
         style={{
           backgroundImage: `url(${mySvg})`,
         }}
       >
-        <div class=" flex justify-center items-center h-screen py-12">
+        <div class=" flex justify-center items-center h-screen py-12 relative z-50">
 
           <div class="container  mx-auto my-auto">
             <div class="items-center flex flex-wrap">
@@ -222,22 +222,22 @@ const Home2 = () => {
           </div>
 
         </div>
-      </section>
-
-      <div >
-            <ul class="circles  lg:absolute">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+      <div  >
+            <ul class="circles absolute ">
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 "></li>
+                    <li className=" bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 invisible lg:visible"></li>
             </ul>
     </div >
+      </section>
+
     </>
   );
 };
